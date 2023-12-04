@@ -2,9 +2,6 @@ numbers = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 i = 0
 while (i < len(numbers) - 1) and (numbers[i] < numbers[i+1]):
     i += 1
-
-x = numbers[i] 
+print(i)
 numbers[i] = numbers[i+1]
-numbers[i+1] = x
-print(numbers)
-
+numbers[i+1] = numbers[i]
