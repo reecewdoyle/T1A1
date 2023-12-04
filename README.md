@@ -116,3 +116,139 @@ List of topics containing ethical issues:
 For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. (Word count guide: 200 words max)
 
 Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+
+## Question 12
+
+### Identify and explain the error in the code snippet below that is preventing correct execution of the program.
+***
+![q12](q12.png)
+***
+
+The first error is that it's not clear what this program does, because there's no instructions. 
+
+Even if you konw that this is a celsius to fahrenheit coverter, there is still an error. 
+
+The input type isn’t defined and therefore is defaulting to a string.
+
+
+The input needs to be defined as an integer. 
+
+You do this by changing line 1 to:
+
+```celsius = int(input())```
+
+ The program can then be improved by adding some instructions:
+
+```celsius = int(input("Enter the temperatrue in celsius:"))```
+
+The finished code looks like this:
+
+![q12_solution](q12_solution.png)
+
+
+
+## Question 13
+### The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+***
+![q13](q13.png)
+***
+While this code doesn’t show any errors, it is not outputting the information we need. The goal of the code is to reverse the order of index 3 (39) and index 4 (19) of the numbers array and print the whole the new order of: 
+
+```[ 5, 22, 29, 19, 39, 51, 78, 96, 84 ]```
+
+This program currently returns an answer of ‘3’. 
+
+This is because of the ```print(i)``` 
+
+In line 2 we establish that ```[i] = 0```
+
+The two statements in the ```while``` loop on line 3 are ```True```. 
+
+```(i  <  len(numbers) – 1)```
+
+The len function returns the number of items in an object. In this case, it’s the count of items in the ```numbers``` array, which is 9. Therefore:
+
+```
+(i  <  len(numbers) – 1)
+
+= (0 < 9 – 1)
+
+= 0 < 8
+```
+
+
+This is a true statement, so we move to the next statement.
+
+```(numbers[i] < numbers[i+1])```
+
+As ```[i] = 0```, we’re talking about the number in the 0-index position of the ```numbers``` array, which is 5.
+
+```numbers[i+1]```
+
+Adding 0 + 1 gives us index position 1 of the numbers array, which is 22.
+
+So,
+```
+(numbers[i] < numbers[i+1])
+
+= (5 < 22)
+```
+
+This is a ```True``` statement, so we move down to the child.
+
+```[i] += 1```
+
+This adds 1 to the value of ```[i]``` every time the program loops until either statement isn’t true.
+
+It takes 3 loops of the program to return a ```False``` statement, and that is 
+
+```
+index 3 < index 4
+
+= 39 < 19.
+```
+The loop stops, and it prints ‘3’, as that is what the initial code snippet is asking it to do. 
+
+We need to change the command to ```print(numbers)``` and move it to the bottom. 
+
+This prints the array of numbers, but they’re not sorted the way the question asked. 
+
+```print(numbers)``` 
+
+returns 
+
+```[ 5, 22, 29, 39, 19, 51, 78, 96, 84 ]```
+
+We still need to swap 39 and 19 (index 3 and index 4)
+
+```numbers[i] = numbers[i+1] ```is an assignment. At this point in the program, ```[i] = 3```
+
+Therefore, we’re saying index 3 = index 4. 
+
+This overwrites index 3’s 39 with index 4’s 19.
+
+The next assignment is 
+
+```numbers[i+1] = numbers[i]```
+
+At this point in the program, this is irrelevant, because ```numbers[i] = numbers[i+1]``` above already made both numbers the same and ```print(numbers)``` returns:
+
+```[ 5, 22, 29, 19, 19, 51, 78, 96, 84 ]```
+
+To make the code work, we need to “store” that index 3 value before it gets over written. 
+
+I achieved this by adding the assignment of 
+
+```x = numbers[i].```
+
+```numbers[i] = numbers[i+1] ```still turns both index 3 and 4 into 19
+
+```numbers[i+1] = x ```makes index 4 print as the number 39. 
+
+```print(numbers) ```now returns 
+
+```[ 5, 22, 29, 19, 39, 51, 78, 96, 84 ] ```
+
+The Final code snippet looked like this:
+
+![q13-solution](q13_solution.png)
