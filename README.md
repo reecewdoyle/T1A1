@@ -2,7 +2,7 @@
 
 ## Question 1
 
-### Identify and explain common and important components and concepts of web development markup language
+    Identify and explain common and important components and concepts of web development markup language
 
 ***
 
@@ -26,7 +26,7 @@ Lee M. Cottrell. HTML & XHTML DeMYSTiFieD. McGraw Hill; 2011. Accessed November 
 ***
 
 ## Question 2    
-### Define the features of the following technologies that are essential in terms of the development of the internet:
+    Define the features of the following technologies that are essential in terms of the development of the internet:
 ***
 
  ### Packets
@@ -49,7 +49,7 @@ IP addresses are needed for the same reason that you need both a send and return
 
 Originally in 1983 IP addresses were created using the IPv4 numbering format. This is a 32-bit numbering system containing 4 sets of numbers separated by dots which allows for 4.3 billion unique combinations that can be used as IP addresses. The true scope of what the internet would grow to become would’ve been impossible to predict. The idea of there being 4.3 billion devices connected to the internet would likely have felt like the stuff of science fiction. (Cloudflare, What is my IP address?, 2023)
 
-The introduction of Smart devices and Wifi means we have an “internet of things” and need far more unique IP addresses than ever would’ve seemed possible in 1983. It’s estimated that there are currently more than 10 billion devices connected to the internet and growing. (11:13, Harrison et al, CrashCourse Computer Science #28)
+The introduction of Smart devices and Wifi means we have an “internet of things” and need far more unique IP addresses than ever would’ve seemed possible in 1983. It’s estimated that there are currently more than 10 billion devices connected to the internet and growing. (11:13, Harrison et al, CrashCourse Computer Science #28, 2017)
 
 To solve this problem, IPv6 was created. IPv6 is a 128-bit format number consisting of 8 groupings of 4 letters or numbers separated by colons. This allows for a 39 digit number of unique IP addresses, as well as some upgrades in security and privacy. (Cloudflare, What is my IP address?, 2003)
 ***
@@ -84,37 +84,93 @@ MDN Web Docs, What is a URL?, 2023, https://developer.mozilla.org/en-US/docs/Lea
 CloudFlare, DNS Server Types, What are the different types of DNS server?, 2023, https://www.cloudflare.com/en-au/learning/dns/dns-server-types/
 CloudFlare, What is routing? |IP routing, 2023, https://www.cloudflare.com/en-au/learning/network-layer/what-is-routing/
 ***
+
 ## Question 3	
-### Define the features of the following technologies that are essential in terms of the development of the internet:
+    Define the features of the following technologies that are essential in terms of the development of the internet:
+     - *TCP*
+    - *HTTP and HTTPS*
+    - *web browsers (requests, rendering and developer tools)*
+
+    Explain how each technology has contributed to the development of client and server communication over the internet (50 - 150 words for each technology)**
 ***
 
- - *TCP*
- - *HTTP and HTTPS*
- - *web browsers (requests, rendering and developer tools)*
+### TCP 
+Transmission Control Protocol (TCP) is the standard that allows communication between different machines and is what makes packet switching viable. While it is IP addresses and packet switching that allows us to break data down into smaller pieces to send through the most efficient route on the network, it is TCP that is responsible for putting the packets in the right order and acknowledging back to the sender that the data packet was received. This is why we usually see it expressed as TCP/IP, as the two technologies are integral to each other. (Fisher, 2019)
 
-**Explain how each technology has contributed to the development of client and server communication over the internet (50 - 150 words for each technology)**
+TCP achieves it's goal of reassembling data packets by assigning a number to each of the packet as it is sent. This allows the receiving machine to reassemble the data in the right order, not unlike putting together a puzzle. (05:49, Harrison et al. Crash Course Computer Science #29, 2017)
 
-**Q4	Identify THREE data structures used in the Python programming language and explain the reasons for using each.**
+Once the data packet is received, the receiver sends back an acknowledgement. The downside of this is that the acknowledgement might be as big as the packet itself, thus doubling the amount of bandwidth required, however the positives outweigh the negatives for most applications.(07:31, Harrison et al. Crash Course Computer Science #29, 2017)
 
-**Q5	Describe the features of interpreters and compilers and how they are different.**
+The sending computer can send multiple copies of the same data packet to make sure the whole piece of data is received. This might occur when there has been a lag in the time between the send and the acknowledgment. Therefore, the sending computer will sense the lag, and can throttle it's transfer speed to not waste bandwidth. (06:11, Harrison et al. Crash Course Computer Science #29, 2017)
 
-**Q6	Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.**
+The sender is able to send multiple packets at a time. If the receiving computer receives any duplicate data packets, it can simply discard them. 
+ 
 
-**Q7	Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+Fisher, Sharon, What is TCP/IP and How Does It Work?, 30 July 2019, https://www.avast.com/c-what-is-tcp-ip#:~:text=What%20does%20TCP%2FIP%20stand,network%20such%20as%20the%20internet.
 
-List of topics containing ethical issues:
- - access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)
- - intellectual property, copyright, and acknowledgement.
- - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
- - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
- - freedom of thought, conscience, speech and the media
- - aggressive sales and marketing practices designed to mislead and deceive consumers
- - trading of shares on the stock exchange OR crypto-currencies
+Harrison, Dr. Chris and Ogan, Dr. Amy, Computer Networks: Crash Course Computer Science #29, CrashCourse, 21 September 2017, https://www.youtube.com/watch?v=AEaKrq3SpW8
 
-For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. (Word count guide: 200 words max)
-
-Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
 ***
+## HTTP and HTTPS
+Hyper Text Transfer Protocol (HTTP) is the method used to send requests for pages from the Client to the Server.  
+
+Once DNS has established the IP address of the server I'd like to contact, my computer uses HTTP to send a GET request. What returns is the a series of data packets that are put back in order using TCP. This usually would reveal some HTML, CSS and Javascript that tells my computer how to display the contents of the webpage I'm wanting to view. 
+
+Hyper Text Transfer Protocol Secure (HTTPS) is the updated version of HTTP, which added TSL/SSL encryption for added security when browsing. This allows 
+
+
+
+
+
+
+
+
+## Question 4
+    Identify THREE data structures used in the Python programming language and explain the reasons for using each.
+***
+## Question 5
+	Describe the features of interpreters and compilers and how they are different.
+***
+
+## Question 6
+	Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.
+***
+
+## Question 7
+	Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+
+    List of topics containing ethical issues:
+    - access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)
+    - intellectual property, copyright, and acknowledgement.
+    - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+    - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
+    - freedom of thought, conscience, speech and the media
+    - aggressive sales and marketing practices designed to mislead and deceive consumers
+    - trading of shares on the stock exchange OR crypto-currencies
+
+    For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. (Word count guide: 200 words max)
+
+    Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+***
+
+## Question 8
+    Explain control flow, using examples from the Python programming language.
+***
+
+## Question 9
+    Explain the difference between type coercion and type conversion. Are either used in Python?
+Python doesn't use type coercion.
+***
+
+## Question 10
+    Explain data types using examples
+***
+
+## Question 11
+    Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
+    - Identify the classes you would use to solve the problem
+    - Write a short explanation of why you would use the classes you have identified
+
 ## Question 12
 
     Identify and explain the error in the code snippet below that is preventing correct execution of the program.
