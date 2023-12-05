@@ -25,7 +25,7 @@ Hirwade, M., & Hirwade, A. W. (2009). Information technology : A practical manua
 Lee M. Cottrell. HTML & XHTML DeMYSTiFieD. McGraw Hill; 2011. Accessed November 28, 2023. https://search.ebscohost.com/login.aspx?direct=true&AuthType=custuid,ip,uid&custid=ns196358&db=nlebk&AN=347015&authtype=cookie,custuid&custid=ns196358&site=ehost-live
 ***
 
-## Qusetion 2    
+## Question 2    
 ### Define the features of the following technologies that are essential in terms of the development of the internet:
 ***
 
@@ -61,7 +61,7 @@ In the context of a network, routing is the path that data packets take to get f
 
  ### Domains and DNS
 
-“The Domain Name System (DNS) is the phonebook of the Internet.” (CloudFlare, What is DNS?, 2023)
+“The Domain Name System (DNS) is the phone book of the Internet.” (CloudFlare, What is DNS?, 2023)
 
 DNS allows people to remember a domain name rather than memorise and IP address. When attempting to load a webpage into a browser, the user will likely use a Uniform Resource Locator (URL) consisting of the Scheme (http:// or https://) and at least the domain name (www.example.com). (MDN, What is a URL?, 2023)
 
@@ -84,8 +84,6 @@ MDN Web Docs, What is a URL?, 2023, https://developer.mozilla.org/en-US/docs/Lea
 CloudFlare, DNS Server Types, What are the different types of DNS server?, 2023, https://www.cloudflare.com/en-au/learning/dns/dns-server-types/
 CloudFlare, What is routing? |IP routing, 2023, https://www.cloudflare.com/en-au/learning/network-layer/what-is-routing/
 ***
-
-
 ## Question 3	
 ### Define the features of the following technologies that are essential in terms of the development of the internet:
 ***
@@ -116,17 +114,17 @@ List of topics containing ethical issues:
 For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. (Word count guide: 200 words max)
 
 Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
-
+***
 ## Question 12
 
-### Identify and explain the error in the code snippet below that is preventing correct execution of the program.
+    Identify and explain the error in the code snippet below that is preventing correct execution of the program.
 ***
 ![q12](q12.png)
 ***
 
 The first error is that it's not clear what this program does, because there's no instructions. 
 
-Even if you konw that this is a celsius to fahrenheit coverter, there is still an error. 
+Even if you know that this is a celsius to Fahrenheit converter, there is still an error. 
 
 The input type isn’t defined and therefore is defaulting to a string.
 
@@ -139,16 +137,14 @@ You do this by changing line 1 to:
 
  The program can then be improved by adding some instructions:
 
-```celsius = int(input("Enter the temperatrue in celsius:"))```
+```celsius = int(input("Enter the temperature in celsius:"))```
 
 The finished code looks like this:
 
 ![q12_solution](q12_solution.png)
-
-
-
+***
 ## Question 13
-### The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+    The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 ***
 ![q13](q13.png)
 ***
@@ -252,3 +248,56 @@ I achieved this by adding the assignment of
 The Final code snippet looked like this:
 
 ![q13-solution](q13_solution.png)
+***
+
+## Question 14
+### Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+    1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+
+    2. Write pseudocode for the process outlined in your flowchart
+
+Start with a ```start```
+
+Let ```n = 0```
+
+Value of ```n``` should increase by 1 with every loop iteration and stop when it reaches 100.
+
+We already know that we can't divide by zero, so no need to test it. 
+
+Next step was to add an input  ```n += 1``` and a decision of ```n <= 100```
+
+Once ```n <= 100``` is False, we take the ```No``` path, and there will be an   ```End``` point.
+
+If ```n <= 100``` is true, we take the ```Yes``` path, and there will be an 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
