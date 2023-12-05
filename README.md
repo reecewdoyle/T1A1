@@ -79,9 +79,14 @@ Ryan, Johnny. A History of the Internet and the Digital Future, Reaktion Books, 
 Harrison, Dr. Chris and Ogan, Dr. Amy, Computer Networks: Crash Course Computer Science #28, CrashCourse, 14 September 2017, https://www.youtube.com/watch?v=3QhU9jd03a0
 
 Cloudflare, What is my IP address, What is an IP address and why does it matter?, 2023, https://www.cloudflare.com/en-au/learning/dns/glossary/what-is-my-ip-address/
-Cloudflare, What is DNS? | How DNS works, 2023, https://www.cloudflare.com/en-au/learning/dns/what-is-dns/
+
+Cloudflare, What is DNS? | How DNS works, 2023, 
+https://www.cloudflare.com/en-au/learning/dns/what-is-dns/
+
 MDN Web Docs, What is a URL?, 2023, https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL
+
 CloudFlare, DNS Server Types, What are the different types of DNS server?, 2023, https://www.cloudflare.com/en-au/learning/dns/dns-server-types/
+
 CloudFlare, What is routing? |IP routing, 2023, https://www.cloudflare.com/en-au/learning/network-layer/what-is-routing/
 ***
 
@@ -114,12 +119,45 @@ Harrison, Dr. Chris and Ogan, Dr. Amy, Computer Networks: Crash Course Computer 
 ## HTTP and HTTPS
 Hyper Text Transfer Protocol (HTTP) is the method used to send requests for pages from the Client to the Server.  
 
-Once DNS has established the IP address of the server I'd like to contact, my computer uses HTTP to send a GET request. What returns is the a series of data packets that are put back in order using TCP. This usually would reveal some HTML, CSS and Javascript that tells my computer how to display the contents of the webpage I'm wanting to view. 
+Once DNS has established the IP address of the server I'd like to contact, my computer uses HTTP to send a GET request. What returns is the a series of data packets that are put back in order using TCP. This usually would reveal some HTML, CSS and Javascript that tells my computer how to display the contents of the webpage I'm wanting to view. (CloudFlare, What is HTTP?, 2023)
 
-Hyper Text Transfer Protocol Secure (HTTPS) is the updated version of HTTP, which added TSL/SSL encryption for added security when browsing. This allows 
+The issue with HTTP was that it passed GET requests that contained a lot of sensative data like bank logins and passwords. If a hacker were to intercept GET requests, they would receive your data in plain text. Very easy to read and exploit. 
+The password information being intercepted would be as easy to read as this:
+
+```username: username```
+
+```password: 123456```
+
+This is why we needed HTTPS.
+
+Hyper Text Transfer Protocol Secure (HTTPS) is the updated version of HTTP, which added encryption for added security when browsing. (CloudFlare, What is HTTPS?, 2023)
+
+With the encryption technology of HTTPS, that same username and password might look like this:
+
+```t8Fw6T8UV81pQfyhDkhebbz7+oiwldr1j2gHBB3L3RFTRsQCpaSnSBZ78Vme+DpDVJPvZdZUZHpzbbcqmSW1+3xXGsERHg9YDmpYk0VVDiRvw1H5miNieJeJ/FNUjgH0BmVRWII6+T4MnDwmCMZUI/orxP3HGwYCSIvyzS3MpmmSe4iaWKCOHQ== ```
+
+(ClourdFlare, Why is HTTP not secure?, 2023)
 
 
+CloudFlare, What is HTTP?, 2023, https://www.cloudflare.com/en-au/learning/ddos/glossary/hypertext-transfer-protocol-http/
 
+Cloudflare, What is HTTPS?, 2023, https://www.cloudflare.com/en-au/learning/ssl/what-is-https/
+
+CloudFlare, Why is HTTP not secure? | HTTP vs. HTTPS, 2023, https://www.cloudflare.com/en-au/learning/ssl/why-is-http-not-secure/ 
+***
+
+## Web Browsers (requests, rendering and developer tools)
+
+The web browser is the application on a device that sends the requests and renders the respone to show us the website. It is where the end user types in a URL like ```www.example.com``` to view the website they want to see. They're designed to be as intuative as possible so that the novice user can still navigate them with ease. 
+
+The most common web browsers are Google Chrome, Mozilla Firefox, Microsoft Edge, and Apple Safari. As these are all different programs, they will interpret the HTML differently. Thus, a standard had to be developed to allow for as consistent as possible expereience and functionality for all websites, regardless of which browser was being used. (Mozilla, What is a web browser?, 2023)
+
+Developer tools are a program witihin a web browser that allows a developer to see the HTML, CSS and JavaScript that was used to make the website look the way it does. They can use this to debug problems with a website or test how it behaves when changes are made. These are non permanent changes that will only affect the performance while the developer is debugging. Once the website is requested again, it will be back to the original source code. (MDN, 2023)
+
+Mozilla, What is a web browser? 2023, https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/
+
+MDN web docs, What are web developer tools? 2023, https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools
+***
 
 
 
