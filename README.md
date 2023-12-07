@@ -238,9 +238,13 @@ Python doesn't use type coercion.
 ## Question 12
 
     Identify and explain the error in the code snippet below that is preventing correct execution of the program.
-***
-![q12](q12.png)
-***
+```python
+celsius = int(input())
+
+fahrenheit = (celsius*9/5)+32
+
+print(f"The result is: {fahrenheit}.")
+```
 
 The first error is that it's not clear what this program does, because there's no instructions. 
 
@@ -261,12 +265,27 @@ You do this by changing line 1 to:
 
 The finished code looks like this:
 
-![q12_solution](q12_solution.png)
+```python
+celsius = int(input("Enter the temperature in celsius:"))
+
+fahrenheit = (celsius*9/5)+32
+
+print(f"The result is: {fahrenheit}.")
+```
+
 ***
 ## Question 13
     The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 ***
-![q13](q13.png)
+```python
+numbers = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i < len(numbers) - 1) and (numbers[i] < numbers[i+1]):
+    i += 1
+print(i)
+numbers[i] = numbers[i+1]
+numbers[i+1] = numbers[i]
+```
 ***
 While this code doesn’t show any errors, it is not outputting the information we need. The goal of the code is to reverse the order of index 3 (39) and index 4 (19) of the numbers array and print the whole the new order of: 
 
@@ -367,7 +386,17 @@ I achieved this by adding the assignment of
 
 The Final code snippet looked like this:
 
-![q13-solution](q13_solution.png)
+```python
+numbers = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i < len(numbers) - 1) and (numbers[i] < numbers[i+1]):
+    i += 1
+
+x = numbers[i] 
+numbers[i] = numbers[i+1]
+numbers[i+1] = x
+print(numbers)
+```
 ***
 
 ## Question 14
@@ -388,8 +417,37 @@ Next step was to add an input  ```n += 1``` and a decision of ```n <= 100```
 
 Once ```n <= 100``` is False, we take the ```No``` path, and there will be an   ```End``` point.
 
-If ```n <= 100``` is true, we take the ```Yes``` path, and there will be an 
+If ```n <= 100``` is true, we take the ```Yes``` path, and there will be an
 
+
+***
+## Question 15
+    You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
+***
+To answer this question, I first made a flowchart so I had a clear understanding of what the program needed to execute. 
+![q15](q15.png)
+***
+This is the code I ended up with:
+
+```python
+raining = True if input("Is it raining? (type yes or no) ").lower() == "yes" else False
+temperature = int(input("What is the temperature? "))
+
+
+if raining == True:
+    if temperature <= 15:
+        print("It's wet and cold")
+    else:
+        print("It's warm and raining")
+
+if raining == False:
+    if temperature <= 15:
+        print("It's not raining but it's cold")
+    else:    
+        print("It's warm but not raining")
+```
+
+***
 
 
 
