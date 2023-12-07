@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net" modified="2023-12-07T03:30:28.098Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Cc_3Sew24luJqqd5Pih_" version="22.1.7" type="device">
+  <diagram name="Page-1" id="Ta0aKKgEkZ-Oxt20f8kZ">
+    <mxGraphModel dx="633" dy="1473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-1" value="start" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-2" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="120" as="sourcePoint" />
+            <mxPoint x="410" y="-230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-3" value="Is it raining?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-4" value="No" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.582;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-3" target="oeYPL7q5qpbZMR1cDwIY-9">
+          <mxGeometry x="-0.4468" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="-190" as="sourcePoint" />
+            <mxPoint x="580" y="-200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="-200" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-6" value="Yes" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-3" target="oeYPL7q5qpbZMR1cDwIY-8">
+          <mxGeometry x="-0.44" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="-190" as="sourcePoint" />
+            <mxPoint x="410" y="-50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="-200" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-8" value="Temp &amp;lt;15" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-9" value="Temp &amp;lt;=15" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-10" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.44;entryY=-0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-8" target="oeYPL7q5qpbZMR1cDwIY-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="30" as="sourcePoint" />
+            <mxPoint x="80" y="-60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="113" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-13" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="oeYPL7q5qpbZMR1cDwIY-10">
+          <mxGeometry x="-0.12" relative="1" as="geometry">
+            <mxPoint x="-3" y="36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-8" target="oeYPL7q5qpbZMR1cDwIY-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="30" as="sourcePoint" />
+            <mxPoint x="370" y="-60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-12" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="oeYPL7q5qpbZMR1cDwIY-11">
+          <mxGeometry x="-0.104" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-14" value="Print: &quot;It&#39;s warm and raining&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="290" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-15" value="Print: &quot;It&#39;s wet and cold&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;entryX=0.565;entryY=-0.047;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-9" target="oeYPL7q5qpbZMR1cDwIY-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="-60" as="sourcePoint" />
+            <mxPoint x="750" y="-60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-19" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="oeYPL7q5qpbZMR1cDwIY-17">
+          <mxGeometry x="-0.1771" relative="1" as="geometry">
+            <mxPoint y="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-18" value="Print: &quot;It&#39;s warm but not raining&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="650" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-20" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oeYPL7q5qpbZMR1cDwIY-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="529.5" y="-110" as="sourcePoint" />
+            <mxPoint x="520" y="66" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-23" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="oeYPL7q5qpbZMR1cDwIY-20">
+          <mxGeometry x="0.3892" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oeYPL7q5qpbZMR1cDwIY-22" value="Print: &quot;It&#39;s not raining but it&#39;s cold.&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

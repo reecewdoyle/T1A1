@@ -190,6 +190,32 @@ MDN web docs, What are web developer tools? 2023, https://developer.mozilla.org/
 
     Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
 ***
+## Access to a user's personal infromation (medical, family, financial, personal attributes, such as sexuality, religion, or beliefs)
+
+The most obvious wide spanning ethical issue that I believe an IT professional would face is the handling of people’s personal data. Even if I were running even a small business that accepts online payments, I would have a rather large responsibility to ensure that I’m meeting my obligations to protect against a data breech. As a user the leaking of my medical history, who is in my family, my financial position, my sexuality, my religion, beliefs, and world view could have long lasting consequences. 
+
+The Australian Government’s Information Commissioner has published resources to help with the handling of personal information for organisations and government agencies, which can be found here:
+
+https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/handling-personal-information/guide-to-securing-personal-information
+
+This resource contains a lot of information regarding the Privacy Act 1988, and things that need to be considered when securing personal data.  As someone new to this field, this is an overwhelming amount of information to digest at once. Even the subsites that contain more specific information about the acts tell you more about your obligations than the “how” of keeping people’s data safe. 
+
+https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/preventing-preparing-for-and-responding-to-data-breaches/data-breach-preparation-and-response/part-1-data-breaches-and-the-australian-privacy-act#consequences-of-a-data-breach
+ 
+Focusing more on the individual than at a companywide view, I would say that the immediate responsibility of the IT professional at a personal level is to act with care and common sense around people’s sensitive data. Some rules of thumb might be:
+
+•	Avoid using a work device on public WiFi wherever possible. 
+
+•	Ensure the security of work devices and home WiFi when working from home.
+
+•	Use 2 factor authentication with your work devices when possible.
+
+•	Updating the software, firmware, and operating systems of your devices regularly.
+
+•	Avoid using separate SDD and HDD that can easily be lost or compromised. (That’s what the cloud is for!)
+
+•	Keep your login credentials secure and update them regularly. 
+***
 
 ## Question 8
     Explain control flow, using examples from the Python programming language.
