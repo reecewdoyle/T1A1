@@ -165,7 +165,151 @@ MDN web docs, What are web developer tools? 2023, https://developer.mozilla.org/
 
 ## Question 4
     Identify THREE data structures used in the Python programming language and explain the reasons for using each.
+
+A data structure in Python is a way of storing a collection of information that belongs together in a single variable.
+
+### Tuples
+Tuples will allow us to easily store and retrieve pieces of data in a single variable, rather than have multiple variables. 
+```python
+# Instead of all this:
+
+fruit_1 = "Apple"
+fruit_2 = "Banana"
+fruit_3 = "Orange"
+fruit_4 = "Pear"
+
+print(fruit_1, fruit_2, fruit_3, fruit_4)
+
+# We can achieve the same with just this
+
+fruits = ("Apple", "Banana", "Orange", "Pear")
+
+print(fruits)
+```
+As you can see, tuples use brackets/parentheses ()
+
+We can now target the elements of the tuple with an index operator []
+```python
+# If I just wanted to print out fruit 0 (Apple in this case, because we count from zero) I just need to do this:
+
+fruits = ("Apple", "Banana", "Orange", "Pear")
+
+print(fruits[0])
+```
+Tuples are immutable, meaning we can't change or append anything to them. This means that they only use a single memory block, and therefore load very quickly. In a use case where speed matters, a tuple will give you an advantage over a list. Tuples are also good if you want to have some data that never changes accessable.
 ***
+### Lists
+Lists are almost the same as tuples, but with the exception that they are mutable. You can assign new values to an index on a list, and you can also append a new value to the end. They look almost the same as well, but they use the square brackets [] instead of parentheses ()
+
+```python
+fruits = ["Apple", "Banana", "Orange", "Pear"]
+print(fruits)
+fruits.append("Watermelon")
+print(fruits)
+fruits[2] = "Mango"
+print(fruits)
+
+# This program would return the following results:
+
+#['Apple', 'Banana', 'Orange', 'Pear']
+#['Apple', 'Banana', 'Orange', 'Pear', 'Watermelon']
+#['Apple', 'Banana', 'Mango', 'Pear', 'Watermelon']
+```
+Lists woulld be a better to use in cases when you know that you were going to need to add something to the list at a later time, or when you knew that at some point you were going to want to change some of the objects in the list. This will use more memory (s blocks) than a tuple, but that is the price you pay for mutability. 
+***
+### Dictionaries
+
+Dictionaries allow us to store additional information about each object all in a single variable. This is in the form of a 'key' and a 'value', which is called a value key pair. The key is on the left, and the value is on the right. This time, we use the curly brackets {}.
+
+```python
+fruits = {
+    "1st Favorite": "Apple",
+    "2nd Favorite": "Banana",
+    "3rd Favorite": "Mango",
+    "4th Favorite": "Pear",
+    "5th Favorite": "Watermelon"
+}
+
+print(fruits["1st Favorite"])
+print(fruits.values())
+print(fruits.keys())
+
+# This would print a value of:
+
+# Apple
+
+# dict_values(['Apple', 'Banana', 'Mango', 'Pear', 'Watermelon'])
+
+# dict_keys(['1st Favorite', '2nd Favorite', '3rd Favorite', '4th Favorite', '5th Favorite'])
+```
+You can also change the values with a pop and assign functions.
+
+```python
+fruits = {
+    "1st Favorite": "Apple",
+    "2nd Favorite": "Banana",
+    "3rd Favorite": "Mango",
+    "4th Favorite": "Pear",
+    "5th Favorite": "Watermelon"
+}
+
+
+fruits.pop("2nd Favorite")
+print(fruits)
+fruits["2nd Favourite"] = ("Kiwi")
+print(fruits)
+
+# This has removed Banana as the 2nd Favourite and replaced it with Kiwi:
+
+# {'1st Favorite': 'Apple', '3rd Favorite': 'Mango', '4th Favorite': 'Pear', '5th Favorite': 'Watermelon'}
+
+# {'1st Favorite': 'Apple', '3rd Favorite': 'Mango', '4th Favorite': 'Pear', '5th Favorite': 'Watermelon', '2nd Favourite': 'Kiwi'}
+```
+Dictionaries also work with integers, so it could be used as a method for keeping track for stock sold in a fruit shop. 
+
+```python
+def update_fruits():
+
+    fruits = {
+        "Apple": 50,
+        "Banana": 100,
+        "Mango": 25,
+        "Pear": 30,
+        "Watermelon" : 30
+    }
+
+    fruits_sold = {
+        "Apple": 30,
+        "Banana": 40,
+        "Mango": 25,
+        "Pear": 20,
+        "Watermelon" : 10
+    }
+    fruits["Apple"] = fruits["Apple"] - fruits_sold["Apple"]
+    fruits["Banana"] = fruits["Banana"] - fruits_sold["Banana"]
+    fruits["Mango"] = fruits["Mango"] - fruits_sold["Mango"]
+    fruits["Pear"] = fruits["Pear"] - fruits_sold["Pear"]
+    fruits["Watermelon"] = fruits["Watermelon"] - fruits_sold["Watermelon"]
+
+    print(fruits)
+
+update_fruits()
+
+# This function subtracts the fruit sold from the fruit list and prints the remaining stock:
+
+# {'Apple': 20, 'Banana': 60, 'Mango': 0, 'Pear': 10, 'Watermelon': 20}
+```
+
+***
+
+
+
+
+
+
+
+
+
 ## Question 5
 	Describe the features of interpreters and compilers and how they are different.
 ***
