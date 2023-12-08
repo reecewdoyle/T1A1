@@ -204,18 +204,67 @@ https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-governmen
  
 Focusing more on the individual than at a companywide view, I would say that the immediate responsibility of the IT professional at a personal level is to act with care and common sense around people’s sensitive data. Some rules of thumb might be:
 
-•	Avoid using a work device on public WiFi wherever possible. 
+* Avoid using a work device on public WiFi wherever possible. 
 
-•	Ensure the security of work devices and home WiFi when working from home.
+* Ensure the security of work devices and home WiFi when working from home.
 
-•	Use 2 factor authentication with your work devices when possible.
+* Use 2 factor authentication with your work devices when possible.
 
-•	Updating the software, firmware, and operating systems of your devices regularly.
+* Updating the software, firmware, and operating systems of your devices regularly.
 
-•	Avoid using separate SDD and HDD that can easily be lost or compromised. (That’s what the cloud is for!)
+* Avoid using separate SDD and HDD that can easily be lost or compromised. (That’s what the cloud is for!)
 
-•	Keep your login credentials secure and update them regularly. 
+* Keep your login credentials secure and update them regularly. 
 ***
+## Intellectual property, copyright, and acknowledgement.
+
+Minimising piracy is also a major responsibility of IT professionals. This would include, but not be limited to:
+
+* __Properly acknowledging everyone who contributed code to software that is available for purchase.__ 
+
+Much like in music, using someone else’s intellectual property is allowed, only when the proper permissions have been granted, and the all the appropriate parties are acknowledged as authors. The same rights protections extend to the developers of software, websites, and apps. Not doing due diligence or acting without integrity in the development phase could lead to some costly legal issues in the future, therefore it is prudent for the developer to always have the correct permissions from copyright holders.
+
+* __Using pirated software at all, but especially in a professional setting.__
+
+
+It is illegal to use pirated software, and using it in a professional setting should be discouraged.  Relying on cracked software leaves you at the mercy of the pirate and their ability to get all the features of the software working reliably. This means that the troubleshooting guides that are common within user communities may not apply to any technical issues you’re having with your stolen software. This leads to lost hours, and lost hours leads to lost productivity. The cost of losing a big client will likely cost you more than just purchasing the software would’ve cost you in the first place. You’re also leaving yourself open to vulnerabilities that are found and patched throughout a product’s lifecycle. 
+
+The Australian Copyright Act 1968 can be found here. 
+
+https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/ca1968133/
+
+
+Once again, with a lack of industry experience, it’s hard to determine where the legislation above meets the ‘how’ of ethical use and piracy. Along with all of the personal level responsibilities mentioned above that applied to keeping personal data secure,the addition of the follwoing would also be prudent:
+* Check that you have permission to use the code that you haven’t authored yourself
+* Follow your organisations guidelines for getting the correct permissions and acknowledge all contributors,
+* If it’s impossible to pay for the software you need, use an open source alternative.
+* If an open source alternative doesn’t exist, and I was unable to pay for the software I needed, I would have some very serious questions about whether or not I should be creating this kind of content in the first place.
+
+***
+    Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+
+
+A major issue with the illegal distribution of copyrighted material is the use of file sharing and torrent websites like Pirate Bay and Bit Torrent. File sharing made it extremely easy to steal music, movies, cracked software, and any other kind of file that you would previously not have access to for free. 
+
+In a perfect world, everyone would just pay for content and software with no further measures required to protect the rights of the copyright owners. In 2016, the Australian Federal court determined that the best way to combat the prevalence of these websites was to pass the responsibility of blocking access to these illegal sites on the Internet Service Providers. 
+
+https://en.wikipedia.org/wiki/Countries_blocking_access_to_The_Pirate_Bay
+
+After initially blocking access to these sites, the lasws were ammended in 2020 to make them more agile. The producers of content (mostly entertainment based) have the ability to contact ISP's with respawned versions of torrent sites as they appear, and the ISP would be obligated to block access, unless they were to write a lengthy appeal. 
+
+https://www.smh.com.au/technology/federal-court-orders-another-86-piracy-sites-blocked-20200604-p54zii.html
+
+This is only part of the solution. The prevelance of stolen media and cracked software demonstrated a desire for the products being consumed, just not at the price point people were willing to pay. Many entertainment based services moved to a streaming and subscription model. With the ever increasing bandwidth and availability of NBN and broadband internet services, it was now not only more convienient to just stream content straight from the internet without the files first needing to be downloaded, it became the prefered method. The realtively small monthly price provided great value for the consumer, as they no longer had to risk downloading poor quality content or viruses from torrent websites. 
+
+This model has also been applied to many software based services that a profesional may find themselves using. For example, Adobe Creative Cloud allows profesionals access to only the programs they need, and for a fraction of the upfront cost of buying the software outright.
+
+Many websites have moved to a web based service as well. Sites like Figma allow a subscription based model where the professional user gets who gets all the tools they need to work some cloud storage all online. A user can log into a site on any device and work from anywhere where there is an internt connection. 
+
+Despite this, these illegal websites can still be accessed through various methods, such as changing the DNS or using VPNs. While this may be very easy for a professional to make use of these illegal websites to get cracked software, as stated above, it is poor practice to do so. 
+
+At a personal level, it is best to take advantage of trial periods for software you're evaluting. Make a decision, but factor in if you can afford the software outright, or consider if it's available in a subscription model, or if there is an opensource option. 
+
+If you were to find that your employer was using cracked software as part of their business practice, it would be worth pointing out that what they're doing is illegal. They're opening the business up to vulnerabilities, and potential functionality issues that could end up costing more money than they're saving. You could point out that there are many affordable alternatives to most software available, or subscription services to mitigate the initial outlay. Even opensource software. If this fell on deaf ears, it may be a good time to consider whether the attitudes of your employer are in line with your own, and where you see yourself in the future. 
 
 ## Question 8
     Explain control flow, using examples from the Python programming language.
@@ -449,6 +498,59 @@ if raining == False:
 
 ***
 
+# Question 16
+    ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
+    - Python (1)
+    - Ruby (2)
+    - Bash (4)
+    - Git (8)
+    - HTML (16)
+    - TDD (32)
+    - CSS (64)
+    - JavaScript (128)
+
+    Write a program that allows a user to input their skills and then tells them 
+    a) Their overall "coding skill score" 
+    b) Skills they may want to learn, and how much each one would improve their score
+
+```python
+# I decided to make the skills required a dictionary.
+# I decided that the most efficient way to ask about the skills that were needed was simple 'Yes/No' questions. 
+
+coding_skills = {
+    "Python" : 1,
+    "Ruby" : 2,
+    "Bash" : 4,
+    "Git" : 8,
+    "HTML" : 16,
+    "TDD" : 32,
+    "CSS" :64,
+    "JavaScript" : 128
+}
+
+# I created another dictionary that would be populated with the skills that the applicant answered anything other than 'yes' to. This would be printed out after the exam.
+missing_skills = {}
+user_score = 0
+
+print("Welcome to the ACME Corporation Junior Developer Skills Assessment")
+
+# The 'for' loop would cycle through each of the skills, and the applicant simply had to type 'y' or 'n' for each. If anything other than 'yes' was provided, the skills would be added to the missing skills dictionary to be printed out later. 
+
+# The applicants score was also calculated based on the values in the coding_skills dictionary. The total score was disaplayed at the end. 
+
+for key,value in coding_skills.items(): 
+    answer = input("Do you know " + key + "? Y/N: ")
+    if answer == "Y" or answer == "y":
+        user_score += value
+    else:
+        missing_skills[key] = value
+
+       
+print("Your score is: " + str(user_score))
+print("If you had known these languages, your score would have increased by this much: ")
+print(missing_skills)
+print("Thank you! We'll be in touch!")
+```
 
 
 

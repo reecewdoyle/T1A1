@@ -20,7 +20,7 @@ for key,value in coding_skills.items():
     else:
         missing_skills[key] = value
 print("Your score is: " + str(user_score))
-print("If you had known these languages, your score would have increased by theis much: ")
+print("If you had known these languages, your score would have increased by this much: ")
 print(missing_skills)
 print("Thank you! We'll be in touch!")
         
