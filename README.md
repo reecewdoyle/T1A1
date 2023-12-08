@@ -159,10 +159,6 @@ Mozilla, What is a web browser? 2023, https://www.mozilla.org/en-US/firefox/brow
 MDN web docs, What are web developer tools? 2023, https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools
 ***
 
-
-
-
-
 ## Question 4
     Identify THREE data structures used in the Python programming language and explain the reasons for using each.
 
@@ -303,15 +299,21 @@ update_fruits()
 ***
 
 
-
-
-
-
-
-
-
 ## Question 5
 	Describe the features of interpreters and compilers and how they are different.
+
+Interpreters and compilers are two different ways that high-level language code is translated into low-level language code (machine code) so the computer can carry out your instructions. 
+
+A compiler translates all your source code at once, creates a new file and executes it straight away. An interpreter converts each line of your source code one at a time and points out errors along the way. C, C++, COBOL and Fortran are compiler languages. Python, JavaScript, Perl and BASIC are interpreter languages. 
+
+Compilers execute more quickly because they’re converting all the source code to machine language at once. Interpreters can take longer because they are analysing and converting each line individually, one at a time. However, since an interpreter can point out errors while coding, the troubleshooting is easier as it happens right away, in the source code. With a compiler, you would first have to create an executable file and then work through the errors after the fact, which could be more difficult. (Chiradeep, 2023)
+
+As both interpreters and compilers achieve the same outcome different ways, there isn’t really a way to determine which is better or worse, as it seems unlikely that they would be used in the same context. 
+
+BasuMallick, Chiradeep, Compiler vs. Interpreter: 12 Critical Differences To Know, 16 June 2023,
+https://www.spiceworks.com/tech/tech-general/articles/compiler-vs-interpreter-12-critical-differences-to-know/#_002
+
+
 ***
 
 ## Question 6
