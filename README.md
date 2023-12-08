@@ -454,19 +454,21 @@ print(numbers)
 
     2. Write pseudocode for the process outlined in your flowchart
 
-Start with a ```start```
+I decided to break my flowchart into 2 parts so it's easier to read. 
+![q14a](q14a.png)
+We start with establishing that ```num = 2```, as 1 isn't a prime number and therefore doesn't need to be checked.
 
-Let ```n = 0```
+I hit a decision block of ```num <= 100``` because I want the loop to stop when I reach 100. 
 
-Value of ```n``` should increase by 1 with every loop iteration and stop when it reaches 100.
+The ```Is prime?``` will have its own flowchart. 
 
-We already know that we can't divide by zero, so no need to test it. 
+If the number is prime, I want it to be printed. If the number is not prime, then it is not printed. Both cases then go throught ```num =+1``` and goes back to the top of the loop. This contiues until we reach 100, then it stops, as all prime numbers have been printed. 
 
-Next step was to add an input  ```n += 1``` and a decision of ```n <= 100```
-
-Once ```n <= 100``` is False, we take the ```No``` path, and there will be an   ```End``` point.
-
-If ```n <= 100``` is true, we take the ```Yes``` path, and there will be an
+![q14b](q14b.png)
+We establish that ```i = 2```
+If ```num``` is dividible by ```i```, it will return false and will not be printed. 
+Otherwise, we move to the next process which ```=+1``` to ```i```
+We then test if ```i < num```. If this is true, we print the number. Otherwise, we go back up and test to see if ```num is divible by i```. If not, it will not print the number as it is not prime. 
 
 
 ***
@@ -529,6 +531,7 @@ coding_skills = {
 }
 
 # I created another dictionary that would be populated with the skills that the applicant answered anything other than 'yes' to. This would be printed out after the exam.
+
 missing_skills = {}
 user_score = 0
 
