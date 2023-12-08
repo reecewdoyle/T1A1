@@ -318,6 +318,26 @@ https://www.spiceworks.com/tech/tech-general/articles/compiler-vs-interpreter-12
 
 ## Question 6
 	Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.
+
+Two commonly used programming languages are Python and C++.
+
+These are two quite different languages that seem to be used for different purposes.
+
+The fundemntal difference between the two languages is that Python is easy for people to understand, and C++ is easy for computers to understand. A computer will require Python to be interpreted, where as C++ is just compiled. It already understands C++. But C++ is quite difficult for people to understand without some dedicated work. 
+
+
+C++ is a low-level language, which is really the only language a computer understands. Therefore, C++ has the advantage of speaking a language very close to that of the computer itself. 
+
+Python is a high-level language, which means it needs to be interpreted for the computer. While this means that Python is a bit slower, the language is much closer to that whcih a human being would use. This makes Python famously one of the most common languages that people learn first, due to the flatter learning curve. 
+
+A drawback for C++ is that is that it is much more complicated to learn. However, the benefits of being able to speak directly to the hardware make C++ very fast to execute. 
+
+Python will never replace C++ as a language, nor does it seek to. 
+
+Python is great for building web applications and and has a large community of users to learn from.  
+
+https://www.softwaretestinghelp.com/python-vs-cpp/#:~:text=The%20major%20advantage%20of%20C%2B%2B,that%20support%20high%2Dlevel%20languages
+
 ***
 
 ## Question 7
@@ -423,6 +443,68 @@ Python doesn't use type coercion.
 
 ## Question 10
     Explain data types using examples
+
+Data types are the many ways that we can comunicate with a computer to tell it how to treat the data that we're using. Python has 15 data types all togther. The 10 we've used so far are:
+
+* str - (String) - This is a sequence of characters: 
+```python
+"Hello World!"
+```
+
+* bool - (Boolean) - This is a value that returns either True or False:
+```python
+print(10 > 9)
+
+# This would print True
+```
+* int - (Integer) - This is a number:
+```python
+42
+```
+
+* float - This means a float point, which we know as a number with a decimalplace:
+```python
+3.14
+```
+* complex - This is a complex number, that is represented with a j. e.g 
+```python
+1 + 2j
+```
+* list - This is an ordered list that is mutable (it can be modified) e.g. 
+```python
+colors = ["Red", "Yellow", "Green", "Blue"]
+```
+* tuple - This is like a list, but it is immutable (it can't be modified): 
+```python
+colours = ("Red", "Yellow", "Green", "Blue")
+```
+
+* range - This is used to determine a range between two numbers. e.g. 
+```python
+range(1, 100)
+```
+* dict - (Dictionary) - Similar to a list, but now represents a key and a value:
+```python
+colors = {
+    "Red" : "#FF0000",
+    "Yellow" : "#FFFF00",
+    "Green" : "#008000",
+    "Blue" : "#0000FF"
+}
+```
+* set - An unorded list without duplicates. Cannot use index operator []:
+```python
+colors = {"Red - #FF0000", "Yellow - #FFFF00", "Green - #008000", "Blue - #0000FF"}
+```
+The remaining 5 data types are 
+* frozenset 
+* bytes 
+* bytearray 
+* memoryview
+* NoneType
+
+NB: As we haven't used these data types yet anything I wrote about them wouldn't be my own work, so I've just listed them here. 
+
 ***
 
 ## Question 11
