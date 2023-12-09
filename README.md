@@ -763,11 +763,11 @@ To make the code work, we need to “store” that index 3 value before it gets 
 
 I achieved this by adding the assignment of 
 
-```x = numbers[i].```
+```num = numbers[i].```
 
 ```numbers[i] = numbers[i+1] ```still turns both index 3 and 4 into 19
 
-```numbers[i+1] = x ```makes index 4 print as the number 39. 
+```numbers[i+1] = num ```makes index 4 print as the number 39. 
 
 ```print(numbers) ```now returns 
 
@@ -781,9 +781,9 @@ i = 0
 while (i < len(numbers) - 1) and (numbers[i] < numbers[i+1]):
     i += 1
 
-x = numbers[i] 
+num = numbers[i] 
 numbers[i] = numbers[i+1]
-numbers[i+1] = x
+numbers[i+1] = num
 print(numbers)
 ```
 ***

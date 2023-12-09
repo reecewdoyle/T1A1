@@ -3,8 +3,8 @@ i = 0
 while (i < len(numbers) - 1) and (numbers[i] < numbers[i+1]):
     i += 1
 
-x = numbers[i] 
+num = numbers[i] 
 numbers[i] = numbers[i+1]
-numbers[i+1] = x
+numbers[i+1] = num
 print(numbers)
 
