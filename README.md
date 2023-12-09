@@ -559,7 +559,7 @@ Type coercion is when your programing language will automatically convert an obj
 ```python
 a = 5
 b = 5.5
-print(a+b)
+print(a + b)
 print(type(a))
 print(type(b))
 
@@ -568,8 +568,61 @@ print(type(b))
 # <class 'int'>
 # <class 'float'>
 ```
+Even though we've just added an ```int``` to a ```float```, Python knows what to do. This is a very common use case, so there's conversion happening in the background that makes it look like we've coerced ```a``` to be an ```float```. If that were the case, when we printed ```print(type(a))``` it would've returned ```<class 'float'>``` instead of ```<class 'int'>``.
 
+Python allows you to explicitly convert between different types. 
+```python
+name = "Reece"
+age = 39
+print(type(name))
+print(type(age))
+# <class 'str'>
+# <class 'int'>
+```
+The ```name``` class is a ```str``` or ```string```, but the ```age``` class is an ```int``` or ```integer```.
+I can change ```age``` to a ```float``` like this:
+```python
+name = "Reece"
+age = 39
+print(age)
+print(type(age))
+age = float(age)
+print(type(age))
+print(age)
+# This would print as: 
+#
+# 39
+# <class 'int'>
+# <class 'float'>
+# 39.0
+```
+```age``` can now be used with functions that require a ```float```
 
+We can also convert a ```float``` into an ```int```:
+
+```python
+name = "Reece"
+height = 185.5
+
+print(height)
+print(type(height)) 
+height = int(height)
+print(type(height))
+print(height)
+# This would print as:
+# 185.5
+# <class 'float'>
+# <class 'int'>
+# 185
+```
+```height``` can now be used with functions that require a ```int```.
+
+(Bro Code, Type casting in Python is easy, 2022)
+
+### References:
+Hunner, Trey. Python doesn't have type coercion, 5 Nov, 2020, https://www.pythonmorsels.com/type-coercion/#:~:text=Python%20Objects%20Don%27t%20Support%20Type%20Coercion&text=Many%20programming%20languages%20would%20make,the%20number%20into%20the%20string.
+
+Bro Code, Type casting in Python is easy, 7 Oct,  2022, https://www.youtube.com/watch?v=Qtq83lAoogM
 
 ***
 
