@@ -554,7 +554,23 @@ else:
 
 ## Question 9
     Explain the difference between type coercion and type conversion. Are either used in Python?
-Python doesn't use type coercion.
+
+Type coercion is when your programing language will automatically convert an object from one data type so that it will work with an object from a different data type. Python doesn't actually have this functionality, however, there are a few cases where it looks like type coercion.
+```python
+a = 5
+b = 5.5
+print(a+b)
+print(type(a))
+print(type(b))
+
+# This will print:
+# 10.5
+# <class 'int'>
+# <class 'float'>
+```
+
+
+
 ***
 
 ## Question 10
