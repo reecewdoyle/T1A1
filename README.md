@@ -697,6 +697,33 @@ NB: As we haven't used these data types yet anything I wrote about them wouldn't
     - Identify the classes you would use to solve the problem
     - Write a short explanation of why you would use the classes you have identified
 
+There are no staff in this restaurant, and our goal is to serve them a variety of food. 
+
+In this virtual restaurant, I need to replace the staff with a ```class```
+
+I think parent ```class``` would be a ```staff```. 
+
+The children of the ```staff``` class would probably be ```cook```, ```server```, and ```cleaner```. These would be instances within the class. 
+
+![q11.png](q11.png)
+
+Then each of these staff would need some attribures:
+
+![q11a.png](q11a.png)
+
+Now that we've worked out what everyone can do, we'll probably need to have at least one more class for Food:
+
+![q11b.png](q11b.png)
+
+I'd use Polymorphism here because we would likely need to divide the food class up into different classes as well, then have instances of different foods underneath. 
+
+Finally, we'd need some drinks to wash the food down. I'd use the same method as the food class:
+
+![q11c.png](q11c.png)
+
+## Buon appetito!
+
+
 ## Question 12
 
     Identify and explain the error in the code snippet below that is preventing correct execution of the program.
