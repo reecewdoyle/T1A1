@@ -434,6 +434,118 @@ If you were to find that your employer was using cracked software as part of the
 
 ## Question 8
     Explain control flow, using examples from the Python programming language.
+
+Control flow is the order that each part of your program is executed. The default implementation would be 'sequential control flow', which means we would move from the top to the bottom, in order. 
+```python
+print("Good Morning!")
+
+word = input("Enter a word here: ")
+
+print(word)
+
+# This program prints the phrase "Good Morning!", asks you to enter a word, and then prints the word you entered. 
+```
+One of the ways we can control the flow of our program is by using Booleans to only print the strings that return a true value.
+
+```python
+Manly_SeaEagles_are_no1 = False
+Newcastle_Knights_are_no1 = True
+Melbourne_Storm_are_no1 = False
+
+if  Manly_SeaEagles_are_no1:
+    print("Doing the Eagle Rock!")
+if Newcastle_Knights_are_no1:
+    print("Go The KNIGHTS!")
+if Melbourne_Storm_are_no1:
+    print("You've been.........THUNDERSTRUCK!") 
+
+# As only the second Boolean is true, the only thing printed is:
+ 
+# Go the KNIGHTS!   
+```
+We could also print multiple if statements:
+```python
+current_day = "Sunday"
+
+if current_day == "Sunday":
+    print("It's game day!")
+    print("Put your jersey on and paint your face!")
+    print("Drive to the stadium!")
+    print("Let's go Knights!")
+
+if current_day == "Tuesday":
+    print("No footy today....")
+    print("get up....")
+    print("go to work....")
+    print("contemplate existance....")
+
+# Fortunately, it is Sunday, so this printed:
+
+# It's game day!
+# Put your jersey on and paint your face!
+# Drive to the stadium!
+# Let's go Knights!
+
+```
+Instead of just using ```if``` statements, we can use ```elif``` , so we're only going through the steps of the program that are relevant. Once the program has been satisfied, it skips the statements that are irrelevant. In the below example, the program stops on ```"Sunday"```, as that is what the ```current_day``` was set to. It did not need to continue with the rest of the program.  
+
+```python
+current_day = "Sunday"
+
+if current_day == "Friday":
+    print("Friday arvo drinks on the boss!")
+elif current_day == "Saturday":
+    print("....why did I try and outdrink the boss?")
+elif current_day == "Sunday":
+    print("It's game day! Let's go Knights!")
+elif current_day == "Monday":
+    print("Has someone got a case of the Mondays?")
+elif current_day == "Tuesday":
+    print("On Tuesday we eat Tacos")
+elif current_day == "Wednesday":
+    print("PAYDAY $$$")
+elif current_day == "Thursday":
+    print("....so close....and yet....so far....")
+
+# As it was Sunday, the only thing that printed was: 
+
+# "It's game day! Let's go Knights!"    
+
+```
+The ```else``` gives us an option if there were no ```if``` of ```elif``` statements that were satisfied:
+
+```python
+Knights_season_points = 40
+
+if Knights_season_points > 32:
+    print("We've romped it into the finals, baby!")
+elif Knights_season_points > 28:
+    print("We've JUST scraped into the finals....")
+else:
+    print("We've missed the finals...better luck next season.")
+
+# As the Knights had a great season and finished with 40 points, the 'if' statment it true and the program printed:
+
+#   "We've romped it into the finals, baby!"
+   
+```
+However, if the Knights were to have the kind of average season that fans were accustomed to for most of the 2010's (*sigh*), the program would look more like this:
+
+```python
+Knights_season_points = 16
+
+if Knights_season_points > 32:
+    print("We've romped it into the finals, baby!")
+elif Knights_season_points > 28:
+    print("We've JUST scraped into the finals....")
+else:
+    print("We've missed the finals...better luck next season.")
+
+# Only 16 points for the season means that neither the 'if' nor the 'elif' statements were satisfied. Therefore, the 'else' statement was executed and this printed:
+
+# "We've missed the finals...better luck next season."
+```
+
 ***
 
 ## Question 9
