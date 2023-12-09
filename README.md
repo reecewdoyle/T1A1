@@ -13,7 +13,9 @@ Hyper Text Markup Language (HTML) is the most common markup language, however, s
 The common and important components across these markup languages is the use of a combination of symbols and plain text. HTML is mostly written with the angle brackets<>, where there is an opening set < > and a closing set that adds a backslash </ >. 
 A H tag with a number would indicate a heading with a size (1 being the largest) while a P tag would indicate a paragraph. A common example would be < h1 >This is a Heading< /h1> or < p>This is a paragraph< /p>. (p6 Cottrell)
 
-XHTML was an upgraded version of HTML created to fix some of the flaws, mostly relating to syntax. Developers now had to pay more attention to making sure all tags were closed and nested properly, all in lowercase. Attributes applied to a tag had to be in quotation marks. For example, <p id=”main-text”>This is the main paragraph.</p> (p6 Cottrell)
+XHTML was an upgraded version of HTML created to fix some of the flaws, mostly relating to syntax. Developers now had to pay more attention to making sure all tags were closed and nested properly, all in lowercase. Attributes applied to a tag had to be in quotation marks. For example:
+
+```<p id=”main-text”> This is the main paragraph.</p>``` (p6 Cottrell)
 
 
 DHTML is a markup language that combines elements of HTML for authoring a website, Cascading Style Sheet (CSS) for styling, and Javascript for programming. It allows the developer to create highly interactive websites. It is sometimes referred to as DOM scripting. (p254 Cottrell)
@@ -135,6 +137,8 @@ Hyper Text Transfer Protocol Secure (HTTPS) is the updated version of HTTP, whic
 With the encryption technology of HTTPS, that same username and password might look like this:
 
 ```t8Fw6T8UV81pQfyhDkhebbz7+oiwldr1j2gHBB3L3RFTRsQCpaSnSBZ78Vme+DpDVJPvZdZUZHpzbbcqmSW1+3xXGsERHg9YDmpYk0VVDiRvw1H5miNieJeJ/FNUjgH0BmVRWII6+T4MnDwmCMZUI/orxP3HGwYCSIvyzS3MpmmSe4iaWKCOHQ== ```
+
+This is much more secure! Good luck getting a username and password out of that!
 
 (ClourdFlare, Why is HTTP not secure?, 2023)
 
@@ -519,7 +523,7 @@ Knights_season_points = 40
 
 if Knights_season_points > 32:
     print("We've romped it into the finals, baby!")
-elif Knights_season_points > 28:
+elif Knights_season_points >= 28:
     print("We've JUST scraped into the finals....")
 else:
     print("We've missed the finals...better luck next season.")
@@ -536,7 +540,7 @@ Knights_season_points = 16
 
 if Knights_season_points > 32:
     print("We've romped it into the finals, baby!")
-elif Knights_season_points > 28:
+elif Knights_season_points >= 28:
     print("We've JUST scraped into the finals....")
 else:
     print("We've missed the finals...better luck next season.")
